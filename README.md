@@ -80,6 +80,11 @@ To Launch the CFT - Press the **Create Stack** button to continue.
 
 **Note:** the following menus in the cloud formation deployment are optional and are organization dependent.
 
+While the cloud formation deployment runs, it will build three services 
+
+
+
+
 ### Installing and configuring the HP Anyware connector Instances
 
 ### 
