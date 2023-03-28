@@ -1,5 +1,4 @@
 # HPA-Connector-AWS-ALB
-Configure a AWS application load balancer for HP Anyware connectors
 ---
 title:AWS ALB for HP Anyware connectors
 description: Configure a AWS ALB for distrubuting PCoIP connections between multiple HP Anyware connectors
