@@ -70,7 +70,7 @@ In this section, the cloudformation wizard will ingest the **HPA-Connector-AWS-A
 
 To Launch the CFT - Press the **Create Stack** button to continue.
 
-*Note* the rest of the cloud formation deployment option in the following menus are all optional.
+**Note:** the rest of the cloud formation deployment option in the following menus are all optional.
 
 ## Gathering Login info IP / credentials and access the EC2 Instance via HP Anyware client
 
