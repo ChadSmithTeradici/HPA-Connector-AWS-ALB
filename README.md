@@ -70,7 +70,7 @@ In this section, the cloudformation wizard will ingest the **HPA-Connector-AWS-A
 
 5. ${\color{orange}SecurityGroup}$ : There is a limitation in this cloud formation template that only allows one security group to be applied on ELB provisioning. Depending on your organizations security policy, you may have to go back into the load balancer configuration setting and add other security groups *(shown further below)*. The security group must support all PCoIP traffic from client request to host residing in private subnets. Refer to the [Anyware Manager as a Service](https://www.teradici.com/web-help/cas_manager_as_a_service/reference/firewall_load_balancing/) administration guide for further information.
 
-6. ${\color{orange}SSLCertificateARN}$ :
+6. ${\color{orange}SSLCertificateARN}$ : Because session negotiation happens over HTTPS, the ELB configuration requires and SSL certificate to 3rd party validate the load balancer to client connection requests. To reference a SSL certificate, one must import an existing or acquired one in the [AWS Certificate Manager (ACM)]https://console.aws.amazon.com/acm).
 
 7. ${\color{orange}LoadBalancerTopology}$ :
 
