@@ -12,7 +12,7 @@ ${\color{green}Contributed \space by \space HP \space employee.}$
 
 This guide shows you how to use AWS cloud formation script to deploy a (layer 7) Application Load Balancer (ALB) to distribute PCoIP connection request between multiple HP Anyware connectors. In this architecture the connectors reside in a DMZ subnet and have elastic IP's associated to them. In coming HTTPS requests are directed to the ALB, which then uses a round robin LB policy to distribute the connection requests. After authentication and PCoIP pixel traffic is generated from the host, the pixel traffic uses the external IP address of the connector to send pixel data to the client. The load balancers ‘sticky session’ policy ensure returning requests will be directed back to the originally assigned connector. *(see diagram below)*
 
- ![image](https://github.com/ChadSmithTeradici/HPA-Connector-AWS-ALB/blob/main/images/AWS-ALB-topology.png)
+  ![image](https://github.com/ChadSmithTeradici/HPA-Connector-AWS-ALB/blob/main/images/AWS-ALB-topology.png)
  
 EC2 Mac instances are available for purchase as Dedicated Hosts through On Demand and Savings Plans pricing models. Billing for EC2 Mac instances is per second with a 24-hour minimum allocation period to comply with the Apple macOS Software License Agreement. Through On Demand, you can launch an EC2 Mac host and be up and running within minutes. At the end of the 24-hour minimum allocation period, the host can be released at any time without further commitment. 
 
