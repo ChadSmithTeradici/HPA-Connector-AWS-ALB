@@ -70,10 +70,10 @@ In this section, the cloudformation wizard will ingest the **HPA-Connector-AWS-A
 
 5. ${\color{orange}SecurityGroup}$ : The automatically generated security group associated to the instance has a rule to allow a back-door RDP (port 3889) communications to the instance for troubleshooting and HP Anywhere patching. We recommend locking this port down by entering in your workstations IP address. This address can be seen [What Is My IP?](https://www.whatismyip.com/) Quickly See your IP Address. Once your external IP has been identified, you must append a */32* to create the security group.
 
-6. {\color{orange}SSLCertificateARN}$ :
+6. ${\color{orange}SSLCertificateARN}$ :
 
 
-7. {\color{orange}LoadBalancerTopology}$ :
+7. ${\color{orange}LoadBalancerTopology}$ :
 
 To Launch the CFT - Press the **Create Stack** button to continue.
 
