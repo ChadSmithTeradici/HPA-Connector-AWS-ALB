@@ -1,0 +1,123 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: >
+  This template deploys an AWS application load balancer that sits in front of HP Anyware Connectors that have public IPs associated to them. After
+  the Cloud Formation template has run and ALB has been deployed. Configure each HP Anyware connector in a SSH session, then come back to LB
+  target group section and add the Connector Instances in as registered targets. If properly configured the health status will turn healthy in minutes.
+
+  
+Metadata:
+   AWS::CloudFormation::Interface: 
+        ParameterGroups:
+            -
+                Label:
+                    default: "Load balancer resources prefix - friendly name"
+                Parameters:
+                    - EnvironmentName
+            -
+                Lablel:
+                    default: "Network configurations"
+                Parameters:
+                    - VPC
+                    - Subnets
+                    - SecurityGroup
+            -
+                Label:
+                    default: "Application Load Balancer configurations"
+                Parameters:
+                    - SSLCertificateARN
+                    - LoadBalancerTopology           
+Parameters:
+  SSLCertificateARN:
+    Description: Provide the ARN of the SSL certificate imported in the AWS Certificate Manager(ACM)
+    Type: String
+    
+  LoadBalancerTopology:
+    Type: String
+    Default: internet-facing
+    AllowedValues:
+        - internet-facing
+        - internal    
+    
+  EnvironmentName:
+    Description: An environment name that will be prefixed to resource names in application load balancer groups.
+    Type: String
+
+  VPC:
+    Type: AWS::EC2::VPC::Id
+    Description: Choose which VPC the application load balancer should be deployed in.
+
+  Subnets:
+    Description: "Choose which subnets the application load balancer should be deployed in. Note: Two subnets in different AZs must be defined even if target instances will reside in single AZ."
+    Type: List<AWS::EC2::Subnet::Id>
+
+  SecurityGroup:
+    Description: Select the security group that has all PCoIP ports and access to subnets in VPC defined that will be apply to the application load balancer.
+    Type: AWS::EC2::SecurityGroup::Id
+    
+Resources:
+  LoadBalancer:
+    Type: AWS::ElasticLoadBalancingV2::LoadBalancer
+    Properties:
+      Type: application
+      Name: !Ref EnvironmentName
+      Subnets: !Ref Subnets
+      Scheme: !Ref LoadBalancerTopology
+      SecurityGroups:
+        - !Ref SecurityGroup
+      Tags:
+        - Key: Name
+          Value: !Ref EnvironmentName
+
+  LoadBalancerListener:
+    Type: AWS::ElasticLoadBalancingV2::Listener
+    Properties:
+      LoadBalancerArn: !Ref LoadBalancer
+      Port: 443
+      Protocol: HTTPS
+      Certificates:
+        - CertificateArn: !Ref SSLCertificateARN
+      DefaultActions:
+        - Type: forward
+          TargetGroupArn: !Ref DefaultTargetGroup
+
+  DefaultTargetGroup:
+    Type: AWS::ElasticLoadBalancingV2::TargetGroup
+    Properties:
+      Name: !Sub ${EnvironmentName}-primary
+      VpcId: !Ref VPC
+      Port: 443
+      Protocol: HTTPS
+      HealthCheckPort: 443
+      HealthCheckIntervalSeconds: 30
+      HealthCheckPath: /health
+      HealthCheckProtocol: HTTPS
+      HealthCheckTimeoutSeconds: 5
+      UnhealthyThresholdCount: 3
+      HealthyThresholdCount: 3
+      TargetType: instance
+      TargetGroupAttributes:
+        - Key: stickiness.enabled
+          Value: true
+        - Key: deregistration_delay.timeout_seconds
+          Value: 300
+        - Key: stickiness.type
+          Value: lb_cookie
+        - Key: stickiness.lb_cookie.duration_seconds
+          Value: 3600
+        - Key: slow_start.duration_seconds
+          Value: 0
+        - Key: load_balancing.algorithm.type
+          Value: round_robin
+Outputs:
+  LoadBalancer:
+    Description: A reference to the application load balancer.
+    Value: !Ref LoadBalancer
+
+  LoadBalancerUrl:
+    Description: The URL of the application load balancer.
+    Value: !GetAtt LoadBalancer.DNSName
+
+  Listener:
+    Description: A reference to a port 443 listener,
+    Value: !Ref LoadBalancerListener
+
