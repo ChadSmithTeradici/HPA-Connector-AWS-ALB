@@ -48,6 +48,6 @@ In this section, you set up some basic resources that the tutorial depends on.
 
 1. Have a [Teradici registerd login](https://help.teradici.com/s/login/SelfRegister) credentials in order to open support ticket(s) if needed. 
 
-## Set up the virtual workstation
+## Set up the Elastic Load Balancer
 
-In this section, you create and configure a virtual workstation, including setting up networking and installing utilities. 
+In this section, . 
