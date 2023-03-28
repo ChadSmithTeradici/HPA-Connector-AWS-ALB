@@ -82,7 +82,7 @@ To Launch the CFT - Press the **Create Stack** button to continue.
 
 While the cloud formation deployment runs, it will build three services 
 
-
+![image](https://github.com/ChadSmithTeradici/HPA-Connector-AWS-ALB/blob/main/images/CFT-Running.png)
 
 
 ### Installing and configuring the HP Anyware connector Instances
