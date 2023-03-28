@@ -1,4 +1,3 @@
-
 ---
 title: AWS ALB for HP Anyware connectors
 description: Configure a AWS ALB for distrubuting PCoIP connections between multiple HP Anyware connectors
@@ -6,6 +5,7 @@ author: chad-m-smith
 tags: HPA, AWS, ALB, CAC
 date_published: 2023-03-28
 ---
+
 
 ---
 title: Install Teradici PCoIP on AWS  EC2 Mac instance
