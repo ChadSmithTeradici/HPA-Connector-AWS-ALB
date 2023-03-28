@@ -94,12 +94,9 @@ As previously stated, the cloudformation template only allows one to add a singl
 
 ![image](https://github.com/ChadSmithTeradici/HPA-Connector-AWS-ALB/blob/main/images/ADD-SG.png)
 
-
 ### Installing and configuring the HP Anyware connector Instances
 
-### hkjdhkj
-
-![image](https://github.com/ChadSmithTeradici/HPA-Connector-AWS-ALB/blob/main/images/ADD-SG.png)
+### Register Target IInatances and ensure Healthy status
 
 ![image](https://github.com/ChadSmithTeradici/HPA-Connector-AWS-ALB/blob/main/images/RegisterTargets.png?raw=true)
 
