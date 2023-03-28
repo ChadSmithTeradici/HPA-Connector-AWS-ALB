@@ -96,7 +96,9 @@ As previously stated, the cloudformation template only allows one to add a singl
 
 ### Installing and configuring the HP Anyware connector Instances
 
-### Register Target IInatances and ensure Healthy status
+### Register targets Instances and ensure healthy status
+Enter in the Target Groups section of the Load Balancing menu on the left-hand side of the 
+
 
 ![image](https://github.com/ChadSmithTeradici/HPA-Connector-AWS-ALB/blob/main/images/RegisterTargets.png?raw=true)
 
