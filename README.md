@@ -16,7 +16,7 @@ This guide shows you how to use a AWS cloud formation script (CFT) to deploy a l
  
 HP Anyware connectors run on EC2 instances, its installation and configuration are outside the scope of this guide. Refer to the [Anyware Manager as a Service]( https://www.teradici.com/web-help/cas_manager_as_a_service/?_ga=2.105362883.1952229980.1680021434-1440526573.1672767407) deployment guide on ‘how to’ configure the connector instances. Once the connectors have been deployed, you can register the instances into the target group created by the load balancer script. 
 
-More Information on EC2 MAC Instance can be found [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html).
+More Information on AWS MAC Instance can be found [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html).
 
 ## Objectives
 
@@ -32,6 +32,7 @@ This guide uses billable components of AWS Cloud and assumes Teradici subscripti
 +   [Teradici PCoIP](https://connect.teradici.com/contact-us), Teradici PCoIP subscriptions
 +   [AWS EC2 Mac Instance](https://aws.amazon.com/ec2/instance-types/mac/), including vCPUs, memory, disk, and GPUs as a dedicated host.
 +   [Internet egress and transfer costs](https://aws.amazon.com/blogs/architecture/overview-of-data-transfer-costs-for-common-architectures/), for PCoIP and other applications communications
++   [AWS Elastic Load Balancing costs](https://aws.amazon.com/elasticloadbalancing/pricing/)
 
 Use the [AWS pricing calculator](https://calculator.aws/#/) to generate a cost estimate based on your projected usage.
 
