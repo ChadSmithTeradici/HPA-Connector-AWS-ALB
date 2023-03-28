@@ -99,6 +99,8 @@ Finally, the output tab is populated with the URLs of the three provisioned serv
 
 ![image](https://github.com/ChadSmithTeradici/HPA-Connector-AWS-ALB/blob/main/images/IncludeASPending.png?raw=true)
 
+![image](https://github.com/ChadSmithTeradici/HPA-Connector-AWS-ALB/blob/main/images/ReviewTargets.png?raw=true)
+
 
 
 
