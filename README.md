@@ -60,12 +60,13 @@ In this section, the cloudformation wizard will ingest the **HPA-Connector-AWS-A
 
 ![image](https://github.com/ChadSmithTeradici/HPA-Connector-AWS-ALB/blob/main/images/CFT-Answers.png)
 
-${\color{orange}Stack \space Name}$ : This field is the name you are going to name your cloud formation deployment, name should be recognizable for function. 
+1. ${\color{orange}Stack \space Name}$ : This field is the name you are going to name your cloud formation deployment, name should be recognizable for function. 
 
 2.	${\color{orange}EnvironmentName}$ : This field allows to to apply a prefix to all resources deployed by the cloud formation template. 
-3.	**VPC:** The virtual private cloud that the ELB will be deployed in. All HP Anyware connector instances, subnets and security groups must all reside in this VPC
-4.	**Subnets:** This drop-list is pre-populated with all the subnets in the AWS accounts region. The ELB configuration requires that at least *two subnet public subnet in two different AZs within the same VPC* be selected, even if you plan on only utilizing a single subnet in a AZ. Your subnets should also allow for *public elastic IPs* be assigned to the HP Anyware Connectors, in order to properly route PCoIP traffic. 
-5.	**SecurityGroup:** The automatically generated security group associated to the instance has a rule to allow a back-door RDP (port 3889) communications to the instance for troubleshooting and HP Anywhere patching. We recommend locking this port down by entering in your workstations IP address. This address can be seen [What Is My IP?](https://www.whatismyip.com/) Quickly See your IP Address. Once your external IP has been identified, you must append a */32* to create the security group.
+
+3.	${\color{orange}VPC}$ : The virtual private cloud that the ELB will be deployed in. All HP Anyware connector instances, subnets and security groups must all reside in this VPC
+5.	**Subnets:** This drop-list is pre-populated with all the subnets in the AWS accounts region. The ELB configuration requires that at least *two subnet public subnet in two different AZs within the same VPC* be selected, even if you plan on only utilizing a single subnet in a AZ. Your subnets should also allow for *public elastic IPs* be assigned to the HP Anyware Connectors, in order to properly route PCoIP traffic. 
+6.	**SecurityGroup:** The automatically generated security group associated to the instance has a rule to allow a back-door RDP (port 3889) communications to the instance for troubleshooting and HP Anywhere patching. We recommend locking this port down by entering in your workstations IP address. This address can be seen [What Is My IP?](https://www.whatismyip.com/) Quickly See your IP Address. Once your external IP has been identified, you must append a */32* to create the security group.
 7. **SSLCertificateARN:**
 8. **LoadBalancerTopology:**
 
