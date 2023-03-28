@@ -40,13 +40,13 @@ In this section, you set up some basic resources that the tutorial depends on.
 
 1. Instructions in this guide assume that you have a [AWS account](https://aws.amazon.com/free/) 
 
-1. Ensure you have [Service Quotas](https://console.aws.amazon.com/servicequotas) for **'Running Dedicated mac1 Hosts'**.
+1. Ensure you have [Service Quotas](https://console.aws.amazon.com/servicequotas) for **'Elastic Load Balancing'**.
 
 1. Familiarize yourself with [AWS network](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Networking.html) topology and best practices.
 
-1. Obtain a [Teradici PCoIP registation](https://connect.teradici.com/contact-us) code that has at least one un-assigned seat available.
+1. Obtain a [Teradici PCoIP registation](https://connect.teradici.com/contact-us) code that will be used for HPA manager licenses (*out of scope*).
 
-1. Have a [Teradici registerd login](https://help.teradici.com/s/login/SelfRegister) credentials in order to obtain **Graphics Agent for macOS**. 
+1. Have a [Teradici registerd login](https://help.teradici.com/s/login/SelfRegister) credentials in order to open support ticket(s) if needed. 
 
 ## Set up the virtual workstation
 
