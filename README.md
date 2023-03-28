@@ -56,7 +56,7 @@ In this section, the cloudformation wizard will ingest the **HPA-Connector-AWS-A
 
 [![name](https://github.com/ChadSmithTeradici/HPA-Connector-AWS-ALB/blob/main/images/CFT-Button.png?raw=true)](https://console.aws.amazon.com/cloudformation/home?#/stacks/quickcreate?templateURL=https://hpagpicbucket4scripts.s3.us-west-2.amazonaws.com/HPA-Connector-AWS-ALB.yml)
 
-## Setting parameters and launching the CFT
+### Setting parameters and launching the CFT
 
 ![image](https://github.com/ChadSmithTeradici/PCoIP-Power-Tools-via-CFT/blob/main/images/CFT-Questions.png)
 
