@@ -70,6 +70,8 @@ In this section, the cloudformation wizard will ingest the **HPA-Connector-AWS-A
 
 To Launch the CFT - Press the **Create Stack** button to continue.
 
+*Note* the rest of the cloud formation deployment option in the following menus are all optional.
+
 ## Gathering Login info IP / credentials and access the EC2 Instance via HP Anyware client
 
 In this section, you will establish a connection to your instance using PCoIP. You will need to install a PCoIP client on your client system that will be used to initiate the session to the EC2 Instance in AWS. Depending on your network topology, use will either connect to the local IP (or) ephemeral/elastic Public IP (or) Fully Qualified Domain Names (FQDN)
