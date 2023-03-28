@@ -84,7 +84,7 @@ While the cloud formation deployment runs, it will build three services the **Lo
 
 ![image](https://github.com/ChadSmithTeradici/HPA-Connector-AWS-ALB/blob/main/images/CFT-Running.png)
 
-Finally, the output tab is populated with the URLs of the three provisioned services as well as DNS Name of the ELB service in AWS. The ELB DNS name is what is handed out to PCoIP client needing to connect to the load balancer front-end. 
+Finally, the output tab is populated with the URLs of the three provisioned services, the **LoadBalancerUrl** is the DNS name that is handed out to PCoIP client needing to connect to the load balancer front-end. 
 
 ![image](https://github.com/ChadSmithTeradici/HPA-Connector-AWS-ALB/blob/main/images/CFT-Output1.png?raw=true)
 
