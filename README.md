@@ -54,4 +54,6 @@ In this section, .
 
 'CTRL + CLICK' On the AWS cloudformation icon to open a new tab in browser and enter in the cloudformation deployment wizard:
 
+[![name](https://github.com/ChadSmithTeradici/HPA-Connector-AWS-ALB/blob/main/images/CFT-Button.png?raw=true)](https://console.aws.amazon.com/cloudformation/home?#/stacks/quickcreate?templateURL=https://hpagpicbucket4scripts.s3.us-west-2.amazonaws.com/HPA-Connector-AWS-ALB.yml)
+
 
