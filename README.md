@@ -6,8 +6,6 @@ tags: HPA, AWS, ALB, CAC
 date_published: 2023-03-28
 ---
 
-Chad Smith | HP Anyware Alliance Architect at HP
-
 ${\color{green}Contributed \space by \space HP \space employee.}$
 
 This guide shows you how to use a AWS cloud formation script (CFT) to deploy a layer 7 - Application Load Balancer (ALB) to distribute PCoIP connection request between multiple HP Anyware connectors. In this architecture, the connectors reside in a public subnet and have elastic IP's associated to them. Incoming HTTPS requests are directed to the ALB, which then uses a 'round robin' LB policy to distribute the connection requests. After authentication and PCoIP pixel traffic is generated from the PCoIP host, the pixel traffic is routed to the external IP address of the connector thats send pixel data directly to the client. The load balancers ‘sticky session’ policy ensure returning requests are directed to the assigned connector. *(see diagram below)*
