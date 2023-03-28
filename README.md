@@ -50,7 +50,7 @@ In this section, you set up some basic resources that the tutorial depends on.
 
 ## Set up the Elastic Load Balancer
 
-In this section, the cloudformation wizard will launch the **HPA-Connector-AWS-ALB.yml** that resides in a publicly accessible bucket and launch the cloudformation deployment service. Answer the minimum number of configuration questions based on your environment’s topology. Finally, address some caveats and ‘gotchas’ that could cause issues with the ELB deployment.
+In this section, the cloudformation wizard will ingest the **HPA-Connector-AWS-ALB.yml** which resides in a publicly accessible S3 bucket, which launching the cloudformation deployment service. Answer the minimum number of configuration questions based on your environment’s topology. Finally, address some caveats and ‘gotchas’ that could cause issues with the ELB deployment.
 
 **'CTRL + CLICK'** On the AWS cloudformation graphic to open a new browser tab to start the cloudformation deployment wizard:
 
