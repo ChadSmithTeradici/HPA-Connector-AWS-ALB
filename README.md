@@ -80,9 +80,13 @@ To Launch the CFT - Press the **Create Stack** button to continue.
 
 **Note:** the following menus in the cloud formation deployment are optional and are organization dependent.
 
-While the cloud formation deployment runs, it will build three services 
+While the cloud formation deployment runs, it will build three services the **LoadBalancer, DefaultTargetGroup** and **LoadBalancerListener**, When the entire cloudformation process completes the name of the deployment shows complete. 
 
 ![image](https://github.com/ChadSmithTeradici/HPA-Connector-AWS-ALB/blob/main/images/CFT-Running.png)
+
+Finally, the output tab is populated with the URLs of the three provisioned services as well as DNS Name of the ELB service in AWS. The ELB DNS name is what is handed out to PCoIP client needing to connect to the load balancer front-end. 
+
+
 
 
 ### Installing and configuring the HP Anyware connector Instances
