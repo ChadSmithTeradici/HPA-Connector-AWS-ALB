@@ -16,7 +16,7 @@ This guide shows you how to use a AWS cloud formation script (CFT) to deploy a l
  
 HP Anyware connectors run on EC2 instances, its installation and configuration are outside the scope of this guide. Refer to the [Anyware Manager as a Service]( https://www.teradici.com/web-help/cas_manager_as_a_service/?_ga=2.105362883.1952229980.1680021434-1440526573.1672767407) deployment guide on ‘how to’ configure the connector instances. Once the connectors have been deployed, you can register the instances into the target group created by the load balancer script. 
 
-More Information on AWS MAC Instance can be found [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html).
+More Information on AWS Elastic Load Balancing (ELB) service can be found [here](https://aws.amazon.com/elasticloadbalancing/).
 
 ## Objectives
 
