@@ -6,15 +6,6 @@ tags: HPA, AWS, ALB, CAC
 date_published: 2023-03-28
 ---
 
-
----
-title: Install Teradici PCoIP on AWS  EC2 Mac instance
-description: Learn how to deploy PCoIP Ultra on AWS EC2 Mac instance with a Teradici subscription plan.
-author: chad-m-smith
-tags: Teradici, AWS, Mac, EC2
-date_published: 2021-10-20
----
-
 Chad Smith | HP Anyware Alliance Architect at HP
 
 <p style="background-color:#CAFACA;"><i>Contributed by HP employees.</i></p>
