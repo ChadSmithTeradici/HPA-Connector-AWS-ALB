@@ -8,7 +8,7 @@ date_published: 2023-03-28
 
 Chad Smith | HP Anyware Alliance Architect at HP
 
-{\color{green}Contributed by HP employee}
+${\color{green}Contributed by HP employee}$
 <p style="background-color:#CAFACA;"><i>Contributed by HP employee.</i></p>
 
 This guide shows you how to use AWS cloud formation script to deploy a (layer 7) Application Load Balancer (ALB) to distribute PCoIP connection request between multiple HP Anyware connectors. In this architecture the connectors reside in a DMZ subnet and have elastic IP's associated to them. In coming HTTPS requests are directed to the ALB, which then uses a round robin LB policy to distribute the connection requests. After authentication and PCoIP pixel traffic is generated from the host, the pixel traffic uses the external IP address of the connector to send pixel data to the client. The load balancers ‘sticky session’ policy ensure returning requests will be directed back to the originally assigned connector. *(see diagram below)*
