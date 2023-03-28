@@ -58,7 +58,7 @@ In this section, the cloudformation wizard will ingest the **HPA-Connector-AWS-A
 
 ### Setting parameters and launching the CFT
 
-![image](https://github.com/ChadSmithTeradici/PCoIP-Power-Tools-via-CFT/blob/main/images/CFT-Questions.png)
+![image](https://github.com/ChadSmithTeradici/HPA-Connector-AWS-ALB/blob/main/images/CFT-Answers.png)
 
 1.	**VcpId** : This field is the virtual private cloud within your AWS region in which you want to deploy the solution in. If no other VPC has been created, you can the *(Default)* VPC automatically created.
 2.	**SubnetId:** This field you MUST select a subnet that has been generated in the same VPC associated above. If no other subnet has been created, you can use the *(Default)* subnet automatically.
