@@ -70,11 +70,11 @@ In this section, the cloudformation wizard will ingest the **HPA-Connector-AWS-A
 
 5. ${\color{orange}SecurityGroup}$ : There is a limitation in this cloud formation template that only allows one security group to be applied on ELB provisioning. Depending on your organizations security policy, you may have to go back into the load balancer configuration setting and add other security groups *(shown further below)*. The security group must support all PCoIP traffic from client request to host residing in private subnets. Refer to the [Anyware Manager as a Service](https://www.teradici.com/web-help/cas_manager_as_a_service/reference/firewall_load_balancing/) administration guide for further information.
 
-6. ${\color{orange}SSLCertificateARN}$ : Because session negotiation happens over HTTPS, the ELB configuration requires and SSL certificate to 3rd party validate the load balancer to client connection requests. To reference a SSL certificate, one must import an existing or acquired one in the [AWS Certificate Manager (ACM)](https://console.aws.amazon.com/acm). The cloud formation deployment will need the **ARN** of the saved SSL certificate and it ARN needs to be copied and pasted into the this field. The find the ARN, click on the certificate URL and view the ARN in the certificate status page.  
+6. ${\color{orange}SSLCertificateARN}$ : Because session negotiation happens over HTTPS, the ELB configuration requires a  3rd party SSL certificate to validate the load balancer to client connection requests. To reference a SSL certificate, one must import an existing or acquired a certifcate in the [AWS Certificate Manager (ACM)](https://console.aws.amazon.com/acm). The cloud formation deployment will need the **ARN** of the saved SSL certificate. The SSLs ARN needs to be copied and pasted into the this field. To find the ARN, click on the certificate's URL and view the ARN in the certificate status page. *(see below)*
 
 ![image](https://github.com/ChadSmithTeradici/HPA-Connector-AWS-ALB/blob/main/images/FIND-ARN.png)
 
-7. ${\color{orange}LoadBalancerTopology}$ :
+7. ${\color{orange}LoadBalancerTopology}$ : The cloud formation template does provide the option to configure the ELB as either an internal (or) internet facing deployment. The majority of situations, an internet facing load balancer is typically deployed in cloud and is the default option.
 
 To Launch the CFT - Press the **Create Stack** button to continue.
 
