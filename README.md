@@ -30,9 +30,9 @@ More Information on AWS MAC Instance can be found [here](https://docs.aws.amazon
 This guide uses billable components of AWS Cloud and assumes Teradici subscription, including the following:
 
 +   [Teradici PCoIP](https://connect.teradici.com/contact-us), Teradici PCoIP subscriptions
-+   [AWS EC2 Mac Instance](https://aws.amazon.com/ec2/instance-types/mac/), including vCPUs, memory, disk, and GPUs as a dedicated host.
++   [AWS EC2 Instance types](https://aws.amazon.com/ec2/instance-types/), including vCPUs, memory and disk for instances that will run as connectors .
 +   [Internet egress and transfer costs](https://aws.amazon.com/blogs/architecture/overview-of-data-transfer-costs-for-common-architectures/), for PCoIP and other applications communications
-+   [AWS Elastic Load Balancing costs](https://aws.amazon.com/elasticloadbalancing/pricing/)
++   [AWS Elastic Load Balancing costs](https://aws.amazon.com/elasticloadbalancing/pricing/), for ELB services that CFT will provision
 
 Use the [AWS pricing calculator](https://calculator.aws/#/) to generate a cost estimate based on your projected usage.
 
