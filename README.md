@@ -68,9 +68,12 @@ In this section, the cloudformation wizard will ingest the **HPA-Connector-AWS-A
 
 4.	${\color{orange}Subnets}$ : This drop-list is pre-populated with all the subnets in the AWS accounts region. The ELB configuration requires that at least **two subnet public subnet in two different AZs within the same VPC** be selected, even if you plan on only utilizing a single subnet in a AZ. Your subnets should also allow for **public elastic IPs** be assigned to the HP Anyware Connectors, in order to properly route PCoIP traffic. 
 
-5.	**SecurityGroup:** The automatically generated security group associated to the instance has a rule to allow a back-door RDP (port 3889) communications to the instance for troubleshooting and HP Anywhere patching. We recommend locking this port down by entering in your workstations IP address. This address can be seen [What Is My IP?](https://www.whatismyip.com/) Quickly See your IP Address. Once your external IP has been identified, you must append a */32* to create the security group.
-7. **SSLCertificateARN:**
-8. **LoadBalancerTopology:**
+5.${\color{orange}SecurityGroup}$ : The automatically generated security group associated to the instance has a rule to allow a back-door RDP (port 3889) communications to the instance for troubleshooting and HP Anywhere patching. We recommend locking this port down by entering in your workstations IP address. This address can be seen [What Is My IP?](https://www.whatismyip.com/) Quickly See your IP Address. Once your external IP has been identified, you must append a */32* to create the security group.
+
+6. {\color{orange}SSLCertificateARN}$ :
+
+
+7. {\color{orange}LoadBalancerTopology}$ :
 
 To Launch the CFT - Press the **Create Stack** button to continue.
 
