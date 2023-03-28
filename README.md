@@ -1,4 +1,4 @@
-# HPA-Connector-AWS-ALB
+
 ---
 title: AWS ALB for HP Anyware connectors
 description: Configure a AWS ALB for distrubuting PCoIP connections between multiple HP Anyware connectors
