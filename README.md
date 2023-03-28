@@ -51,3 +51,7 @@ In this section, you set up some basic resources that the tutorial depends on.
 ## Set up the Elastic Load Balancer
 
 In this section, . 
+
+'CTRL + CLICK' On the AWS cloudformation icon to open a new tab in browser and enter in the cloudformation deployment wizard:
+
+
