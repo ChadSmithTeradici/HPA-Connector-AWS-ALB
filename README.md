@@ -60,17 +60,17 @@ In this section, the cloudformation wizard will ingest the **HPA-Connector-AWS-A
 
 ![image](https://github.com/ChadSmithTeradici/HPA-Connector-AWS-ALB/blob/main/images/CFT-Answers.png)
 
-1.	**Stack Name** : This field is the virtual private cloud within your AWS region in which you want to deploy the solution in. If no other VPC has been created, you can the *(Default)* VPC automatically created.
-2.	**EnvironmentName:** This field you MUST select a subnet that has been generated in the same VPC associated above. If no other subnet has been created, you can use the *(Default)* subnet automatically.
-3.	**VPC:** This drop-list is pre-populated with NVIDIA enabled instance types. Care must be taken to ensure that your selected instances IS available in your AWS region and Available Zone (AZ). As a general rule, almost all G4dn instance types are available in all regions, which G5 instances are available in most popular regions. Check these webpages to verify your instance resource requirements. [AWS G4dn instance family](https://aws.amazon.com/ec2/instance-types/g4/)  and [AWS G5 instance family](https://aws.amazon.com/ec2/instance-types/g5/)
-4.	**Subnets:** Select the Key name of your Key Pair. The key pair will be used to generate your Windows Administrator password after the Instance has been started. If you haven’t generated a Key Pair, log into the [EC2 dashboard](https://console.aws.amazon.com/ec2), navigate to the left-side bar under Network & Security > Key Pairs > create new Key Pair
+1.	**Stack Name** : This field is the name you are going to name your cloud formation deployment, name should be recognizable for function. 
+2.	**EnvironmentName:** This field allows to to apply a prefix to all resources deployed by the cloud formation template. 
+3.	**VPC:** The virtual private cloud that the ELB will be deployed in. All HP Anyware connector instances, subnets and security groups must all reside in this VPC
+4.	**Subnets:** This drop-list is pre-populated with all the subnets in the AWS accounts region. The ELB configuration requires that at least *two subnet public subnet in two different AZs within the same VPC* be selected, even if you plan on only utilizing a single subnet in a AZ. Your subnets should also allow for *public elastic IPs* be assigned to the HP Anyware Connectors, in order to properly route PCoIP traffic. 
 5.	**SecurityGroup:** The automatically generated security group associated to the instance has a rule to allow a back-door RDP (port 3889) communications to the instance for troubleshooting and HP Anywhere patching. We recommend locking this port down by entering in your workstations IP address. This address can be seen [What Is My IP?](https://www.whatismyip.com/) Quickly See your IP Address. Once your external IP has been identified, you must append a */32* to create the security group.
-6. **SSLCertificateARN:**
-7. **LoadBalancerTopology:**
+7. **SSLCertificateARN:**
+8. **LoadBalancerTopology:**
 
 To Launch the CFT - Press the **Create Stack** button to continue.
 
-**Note:** the following menus in the cloud formation deployment are optional.
+**Note:** the following menus in the cloud formation deployment are optional and are organization dependent.
 
 ## Gathering Login info IP / credentials and access the EC2 Instance via HP Anyware client
 
