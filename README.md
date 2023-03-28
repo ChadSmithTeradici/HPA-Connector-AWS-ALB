@@ -18,10 +18,10 @@ More Information on AWS Elastic Load Balancing (ELB) service can be found [here]
 
 ## Objectives
 
-+ Allocate a AWS EC2 Mac Instance from AWS Console.
-+ Configure Security Groups to allows access to instance (SSH,VNC & PCoIP ports).
-+ Install supporting software and configure security parameters within Mac OS.
-+ Connect to EC2 Mac Instance via PCoIP client
++ Load the *HPA-Connector-AWS-ALB.yml* script in the AWS cloudformation deployment service
++ Configure the script's variables for your existing VPC topology.
++ After HPA connector(s) deployment, come back to AWS ELB target group and register instances
++ Verify Health Status of each HPA connector.
 
 ## Costs
 
