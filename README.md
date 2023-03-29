@@ -96,6 +96,8 @@ As previously stated, the cloudformation template only allows one to add a singl
 
 ### Installing and configuring the HP Anyware connector instances
 
+While the installation process of configuring a HP Anyware Connector is out of scope of this guide, it is an essential step in completing the following section of registering targets. If you haven’t configured a HP Anyware Connector(s), refer to the [Anyware Manager as a Service](https://www.teradici.com/web-help/cas_manager_as_a_service/?_ga=2.107355842.1952229980.1680021434-1440526573.1672767407) administration guide. 
+
 ### Register targets Instances and ensure healthy status
 Enter in the Target Groups section of the Load Balancing menu on the left-hand side of the [EC2 dashboard](https://console.aws.amazon.com/ec2)
 
