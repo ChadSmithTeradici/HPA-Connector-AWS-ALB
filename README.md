@@ -90,7 +90,7 @@ Finally, the output tab is populated with the URLs of the three provisioned serv
 
 ### Manually adding additional security groups to load balancer
 
-As previously stated, the cloudformation template only allows one to add a single security group in a deployment. In most cases you must add additional SGs to ensure proper communication between instances and subnets. **Load Balancers >** *Prefix Name* **> Security **
+As previously stated, the cloudformation template only allows one to add a single security group in a deployment. In most cases you must add additional SGs to ensure proper communication between instances and subnets. **Load Balancers >** *Prefix Name* > **Security**
 
 ![image](https://github.com/ChadSmithTeradici/HPA-Connector-AWS-ALB/blob/main/images/ADD-SG.png)
 
