@@ -99,7 +99,7 @@ As previously stated, the cloudformation template only allows one to add a singl
 ### Register targets Instances and ensure healthy status
 Enter in the Target Groups section of the Load Balancing menu on the left-hand side of the [EC2 dashboard](https://console.aws.amazon.com/ec2)
 
-![image](hdh)
+  ![image](https://github.com/ChadSmithTeradici/HPA-Connector-AWS-ALB/blob/main/images/ChooseTargetGroup.png)
 
 
 ![image](https://github.com/ChadSmithTeradici/HPA-Connector-AWS-ALB/blob/main/images/RegisterTargets.png?raw=true)
