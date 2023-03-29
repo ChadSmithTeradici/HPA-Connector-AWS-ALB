@@ -101,10 +101,15 @@ Enter in the Target Groups section of the Load Balancing menu on the left-hand s
 
   ![image](https://github.com/ChadSmithTeradici/HPA-Connector-AWS-ALB/blob/main/images/ChooseTargetGroup.png)
 
+Select the target group with the *prefix name* that was applied in the cloudformation deployment. Select the **Register targets** in the middle of the page.
 
 ![image](https://github.com/ChadSmithTeradici/HPA-Connector-AWS-ALB/blob/main/images/RegisterTargets.png?raw=true)
 
+'Click' the blue check-box next to each of the HP Anyware connectors instances that were previously configured. Once selected, Press **Include as pending below**,
+
 ![image](https://github.com/ChadSmithTeradici/HPA-Connector-AWS-ALB/blob/main/images/IncludeASPending.png?raw=true)
+
+In the review target section of the page, ensure you have selected the correct EC2 instances then press the **Register pending targets**.
 
 ![image](https://github.com/ChadSmithTeradici/HPA-Connector-AWS-ALB/blob/main/images/ReviewTargets.png?raw=true)
 
