@@ -113,6 +113,8 @@ In the review target section of the page, ensure you have selected the correct E
 
 ![image](https://github.com/ChadSmithTeradici/HPA-Connector-AWS-ALB/blob/main/images/ReviewTargets.png?raw=true)
 
+In the target groups page, you will see the newly added instances automatically go through a health status check and show a healthy number of participants in the group.  These HP Anyware connectors are now ready to receive HTTPS requests from PCoIP clients.
+
 ![image](https://github.com/ChadSmithTeradici/HPA-Connector-AWS-ALB/blob/main/images/HealthlyStatus.png?raw=true)
 
 
