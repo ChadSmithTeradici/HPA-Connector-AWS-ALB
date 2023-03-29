@@ -94,7 +94,7 @@ As previously stated, the cloudformation template only allows one to add a singl
 
 ![image](https://github.com/ChadSmithTeradici/HPA-Connector-AWS-ALB/blob/main/images/ADD-SG.png)
 
-### Installing and configuring the HP Anyware connector Instances
+### Installing and configuring the HP Anyware connector instances
 
 ### Register targets Instances and ensure healthy status
 Enter in the Target Groups section of the Load Balancing menu on the left-hand side of the [EC2 dashboard](https://console.aws.amazon.com/ec2)
